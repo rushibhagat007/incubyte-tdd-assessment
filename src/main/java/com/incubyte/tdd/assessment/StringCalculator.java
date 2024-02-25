@@ -28,14 +28,13 @@ public class StringCalculator {
             int n = Integer.parseInt(num);
             if (n < 0) {
             	negativeNumbers.add(n);
-            }
-            sum += n;
-        }
-
-        if (!negativeNumbers.isEmpty()) {
-            throw new IllegalArgumentException("Negative numbers not allowed: " + negativeNumbers);
-        }
-
-        return sum;
-    }
+			} else if (n <= 1000) {
+				sum += n;
+			}
+		}
+		if (!negativeNumbers.isEmpty()) {
+			throw new IllegalArgumentException("Negative numbers not allowed: " + negativeNumbers);
+		}
+		return sum;
+	}
 }
