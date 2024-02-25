@@ -22,4 +22,11 @@ public class StringCalculatorTest {
         StringCalculator calculator = new StringCalculator();
         assertEquals(3, calculator.add("1,2"));
     }
+	
+	@Test
+    public void testAddMultipleNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.add("1,2,3"));
+    }
+	
 }
